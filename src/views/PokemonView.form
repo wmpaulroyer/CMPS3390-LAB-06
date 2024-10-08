@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="views.PokemonView">
+  <grid id="27dc6" binding="panelMain" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="3697" binding="panelInputs" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="9f92e" class="javax.swing.JTextField" binding="textFieldPokeName">
+            <constraints/>
+            <properties>
+              <columns value="20"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="85cf2" class="javax.swing.JButton" binding="buttonGetPoke">
+            <constraints/>
+            <properties>
+              <text value="Get Pokemon"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ebc13" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="e5b33" class="javax.swing.JLabel" binding="pokeImage">
+            <constraints/>
+            <properties>
+              <enabled value="true"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <labelFor value="9f92e"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="5c6a4">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="8bcc4" class="javax.swing.JTextArea" binding="textPokeInfo">
+            <constraints/>
+            <properties>
+              <autoscrolls value="false"/>
+              <editable value="false"/>
+              <focusable value="false"/>
+              <lineWrap value="true"/>
+              <margin top="10" left="10" bottom="10" right="10"/>
+              <requestFocusEnabled value="false"/>
+              <text value="WELCOME TO POKEDEX!&#10;ENTER A POKEMON TO LEARN MORE ABOUT THEM!"/>
+              <wrapStyleWord value="true"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="NoLabelFor"/>
+  </inspectionSuppressions>
+</form>
